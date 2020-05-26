@@ -1,7 +1,16 @@
+<div class="container">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1425&q=80)">
+    <h1>Cocktails</h1>
+  </div>
 
-<h1>Cocktails</h1>
-<ol>
-  <% @cocktails.each do |cocktail| %>
-    <li><%= cocktail.name %></li>
-  <% end %>
-</ol>
+      <div class="cards">
+        <% @cocktails.each do |cocktail| %>
+          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
+             <%= link_to cocktail.name, cocktail_path(cocktail) %>
+          </div>
+        <% end %>
+      </div>
+
+  <div >
+
+
